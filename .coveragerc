@@ -1,0 +1,14 @@
+[run]
+branch = true
+omit =
+    */env/*
+    */test/*
+    log_lint_plugin.py
+
+[report]
+fail_under = 100
+exclude_lines =
+    def __repr__
+    def __str__
+    def __unicode__
+    pragma: no cover
