@@ -1,5 +1,6 @@
 [run]
 branch = true
+relative_files = true
 omit =
     */env/*
     */test/*
