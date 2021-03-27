@@ -87,3 +87,14 @@ To integrate it with VS Code, add the following to your `.vscode/settings.json` 
     "${workspaceFolder}/.ml-python-configs/.mypy.cfg",
 ],
 ```
+
+## [liccheck](https://github.com/dhatim/python-license-check)
+The `liccheck.cfg` file allows common public domain and permissive licenses, and blocklists protective/copyleft ones. Using `liccheck` in "paranoid" mode will fail on any package which does not have all of its licensees explicitly allowed by the configuration.
+
+There's no integration with VS Code, but you can use the following example commands to run the tool:
+
+```
+poetry export -f requirements.txt --output requirements.txt --without-hashes
+poetry run liccheck -s .ml-python-configs/liccheck.cfg \
+    -r requirements.txt -l paranoid
+```
