@@ -147,7 +147,8 @@ disable=print-statement,
         unused-argument,
         too-many-locals,
         duplicate-code,
-        too-many-statements
+        too-many-statements,
+        too-many-arguments
 
 # Enable the message, report, category or checker with the given id(s). You can
 # either give multiple identifier separated by comma (,) or put this option
@@ -539,9 +540,6 @@ valid-metaclass-classmethod-first-arg=cls
 
 
 [DESIGN]
-
-# Maximum number of arguments for function / method.
-max-args=5
 
 # Maximum number of attributes for a class (see R0902).
 max-attributes=7
